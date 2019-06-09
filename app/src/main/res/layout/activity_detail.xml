@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_background"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+
+            />
+
+
+            <TextView
+                android:id="@+id/txtMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="...More"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+            <Button
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorwhite"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video Traller"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
